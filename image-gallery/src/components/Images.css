@@ -1,0 +1,96 @@
+.gallery-wrap{
+ 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 80px;
+    align-items: center;
+    justify-content: center;
+    max-width: 820px;
+    margin: 0 auto;
+
+}
+.gallery-wrap .single{
+    
+     width: 200px;
+     cursor: pointer;
+     box-shadow: 2px 2px 2px 2px #888888;
+     border-bottom-right-radius: 5px;
+     border-bottom-left-radius: 5px;
+}
+.carname{
+     
+    padding: 2px;
+    border-radius: 3px;
+    margin-top: 1px; 
+}
+
+img{
+ 
+     max-width: 100%;
+     border-radius: 3px;
+     
+}
+.gallery-wrap .single img:hover{
+ transform: scale(1.04);
+}
+
+.slider-wrap{
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.slider-wrap .btnClose ,.slider-wrap .btnNext , .slider-wrap .btnPrev{
+   position: fixed;
+   cursor: pointer;
+   opacity: 0.6;
+   color: #fff;
+   z-index: 9999;
+
+}
+
+.slider-wrap .btnClose{
+  top: 40px;
+  right: 40px;
+}
+
+.slider-wrap .btnNext{
+  top: 50%;
+  transform: translateY(-50%);
+  right: 40px;
+}
+
+.slider-wrap .btnPrev{
+  top: 50%;
+  transform: translateY(-50%);
+  left: 40px;
+}
+
+.fullScreenImage{
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.fullScreenImage img{
+    max-width:100%;  
+    max-height: 100%;
+    pointer-events: none;
+    user-select: none;
+ 
+}   
+ 

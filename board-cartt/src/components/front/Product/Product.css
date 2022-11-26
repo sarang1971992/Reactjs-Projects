@@ -1,0 +1,35 @@
+.card{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0px 90px;
+  }
+  
+  .single-card{
+    margin: 0px 90px;
+    box-shadow: 1px 1px 1px 1px black;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .image{
+    height: 220px;
+    width: 220px;
+    background-color: azure;
+    padding: 3px;
+    box-shadow: 1px;
+  }
+  
+  
+  .add-cart{
+    margin-top:5px;
+    padding: 9px;
+    background-color: blue;
+    color: white;
+    border-color: blue;
+  }
+  
+  .product-info{
+  
+    margin-top: 5px;
+  }
